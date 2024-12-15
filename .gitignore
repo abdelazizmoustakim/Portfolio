@@ -23,7 +23,7 @@ dist-ssr
 # Ignore files
 LOGO.png
 main.txt
-src/Pages/Courses/Courses.jsx
+src/Pages/Courses/Teachings.jsx
 src/Pages/Writing/Writing.jsx
 src/Pages/Books/Books.jsx
 src/Pages/Projects/Projects.jsx
