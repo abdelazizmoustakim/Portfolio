@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer components{
+    
+}
+@layer utilities {
+    .hero-bg-color {
+      @apply bg-gradient-to-r from-gray-300/80 to-gray-100 dark:from-gray-900 dark:to-gray-800 dark:text-white;
+    }
+    .form-input {
+      @apply w-full rounded-full border border-gray-300 dark:border-gray-500 dark:bg-gray-800 px-2 py-1 mb-4;
+    }
+  }
+/* src/styles.css or index.css */
+@keyframes slideInOut {
+  0% {
+    transform: translateX(100%); /* Start off screen to the right */
+    opacity: 0; /* Invisible */
+  }
+  10% {
+    transform: translateX(0); /* Slide in */
+    opacity: 1; /* Fully visible */
+  }
+  90% {
+    transform: translateX(0); /* Stay in place */
+    opacity: 1; /* Fully visible */
+  }
+  100% {
+    transform: translateX(-100%); /* Slide out to the left */
+    opacity: 0; /* Invisible */
+  }
+}
+.discount-banner {
+  position: relative;
+  width: 100%;
+  overflow: hidden; /* Ensure the text does not overflow */
+}
+.animate-slide {
+  animation: slideInOut 5s ease-in-out infinite; /* Infinite looping */
+}
+@layer utilities {
+  .form-input {
+    @apply w-full rounded-md border border-gray-300 dark:border-gray-500 dark:bg-gray-800 px-3 py-2 mb-4 transition duration-200;
+    &:focus {
+        @apply ring-2 ring-blue-400 outline-none;
+    }
+  }
+}
+@font-face {
+  font-family: 'Playwright England SemiJoined';
+  src: url('/path/to/font/PlaywrightEnglandSemiJoined.woff2') format('woff2'); /* Adjust the path as needed */
+  font-weight: normal;
+  font-style: normal;
+}
