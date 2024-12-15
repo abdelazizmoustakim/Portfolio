@@ -21,7 +21,9 @@ dist-ssr
 *.sln
 *.sw?
 # Ignore files
-src/Pages/Courses/intro.mp4
+LOGO.png
+main.txt
+src/Pages/Courses/Courses.jsx
 src/Pages/Writing/Writing.jsx
 src/Pages/Books/Books.jsx
 src/Pages/Projects/Projects.jsx
