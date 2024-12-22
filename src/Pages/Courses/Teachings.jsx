@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { PiChalkboardTeacherFill } from "react-icons/pi";
 import { Button } from '@mui/material'
-
+import {Courses} from '../index/index'
 const Teachings = () => {
   return (
     <div className="min-h-screen flex flex-col bg-gray-50 dark:bg-gray-900 dark:text-white duration-200">
