@@ -104,14 +104,11 @@ const randomQuote = [
   ];
 const Quotes = () => {
   const [randomIndex, setRandomIndex] = useState(null);
-
   useEffect(() => {
     const index = Math.floor(Math.random() * randomQuote.length);
     setRandomIndex(index);
   }, []); 
-
   if (randomIndex === null) return <div>Loading...</div>;
-
   return (
     <div className="text-center mt-10 mb-10">
       <p className="italic text-2xl text-gray-700 dark:text-yellow-100">
@@ -123,5 +120,4 @@ const Quotes = () => {
     </div>
   );
 }
-
 export default Quotes;

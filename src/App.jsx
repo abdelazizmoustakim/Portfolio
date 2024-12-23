@@ -10,7 +10,6 @@ import Books from "./Pages/Books/Books.jsx";
 import Projects from "./Pages/Projects/Projects.jsx";
 import 'aos/dist/aos.css'; // Don't forget to import AOS styles
 const App = () => {
-  // Initialize AOS
   useEffect(() => {
     AOS.init({
       duration: 1000, // You can customize this value
