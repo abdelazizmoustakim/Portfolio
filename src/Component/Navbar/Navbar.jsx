@@ -43,7 +43,7 @@ const Navbar = () => {
             <Link
               key={linkItem.id}
               to={linkItem.link}
-              className="text-black dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-all duration-300 uppercase py-2 px-4 rounded-lg"
+              className="text-black dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-all italic duration-300 uppercase py-1 px-4 rounded-lg"
             >
               {linkItem.name}
             </Link>
